@@ -3,8 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ingenieriasoftware;
+package ingenieriasoftware.Admin;
 
+import ingenieriasoftware.Bitacora.JPanelBitacora;
+import ingenieriasoftware.Registro.JPanelRegistro;
 import java.awt.BorderLayout;
 import static ingenieriasoftware.JFramePrincipal.jPanelPrincipalP;
 
@@ -48,8 +50,9 @@ public class JPanelAdmin extends javax.swing.JPanel {
         jPanel1.setBackground(new java.awt.Color(249, 249, 249));
         jPanel1.setLayout(new java.awt.GridBagLayout());
 
-        jButtonRegistro.setBackground(new java.awt.Color(255, 255, 255));
+        jButtonRegistro.setBackground(new java.awt.Color(249, 249, 249));
         jButtonRegistro.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButtonRegistro.setForeground(new java.awt.Color(51, 51, 51));
         jButtonRegistro.setText("Registro");
         jButtonRegistro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -59,14 +62,15 @@ public class JPanelAdmin extends javax.swing.JPanel {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.ipadx = 45;
-        gridBagConstraints.ipady = 9;
+        gridBagConstraints.ipadx = 64;
+        gridBagConstraints.ipady = 20;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 334, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(5, 310, 0, 0);
         jPanel1.add(jButtonRegistro, gridBagConstraints);
 
-        jButtonBitacora.setBackground(new java.awt.Color(255, 255, 255));
+        jButtonBitacora.setBackground(new java.awt.Color(249, 249, 249));
         jButtonBitacora.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButtonBitacora.setForeground(new java.awt.Color(51, 51, 51));
         jButtonBitacora.setText("Bitacora");
         jButtonBitacora.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,10 +80,10 @@ public class JPanelAdmin extends javax.swing.JPanel {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.ipadx = 45;
-        gridBagConstraints.ipady = 9;
+        gridBagConstraints.ipadx = 64;
+        gridBagConstraints.ipady = 20;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 49, 0, 337);
+        gridBagConstraints.insets = new java.awt.Insets(5, 54, 0, 318);
         jPanel1.add(jButtonBitacora, gridBagConstraints);
 
         javax.swing.GroupLayout jPanelMenuLayout = new javax.swing.GroupLayout(jPanelMenu);
@@ -96,8 +100,9 @@ public class JPanelAdmin extends javax.swing.JPanel {
             jPanelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelMenuLayout.createSequentialGroup()
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jPanelBaseP.setBackground(new java.awt.Color(249, 249, 249));
@@ -119,7 +124,7 @@ public class JPanelAdmin extends javax.swing.JPanel {
             .addGroup(jPanelBasePLayout.createSequentialGroup()
                 .addGap(72, 72, 72)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 386, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(97, Short.MAX_VALUE))
+                .addContainerGap(80, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

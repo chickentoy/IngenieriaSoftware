@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ingenieriasoftware;
+package ingenieriasoftware.Registro;
 
 /**
  *
  * @author Chicken
  */
-public class JPanelRegistro extends javax.swing.JPanel {
+public class JPanelRegistroResidente extends javax.swing.JPanel {
 
     /**
      * Creates new form JPanelRegistro
      */
-    public JPanelRegistro() {
+    public JPanelRegistroResidente() {
         initComponents();
     }
 
